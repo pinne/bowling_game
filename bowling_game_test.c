@@ -12,6 +12,7 @@ static void test_gutter_game()
 	roll_many(game, 20, 0);
 	assert(bowling_game_score(game) == 0
 			&& "test_gutter_game()");
+	bowling_game_destroy(game);
 }
 
 static void test_all_ones()
@@ -20,6 +21,7 @@ static void test_all_ones()
 	roll_many(game, 20, 1);
 	assert(bowling_game_score(game) == 20
 			&& "test_all_ones()");
+	bowling_game_destroy(game);
 }
 
 static void test_one_spare()
@@ -31,6 +33,7 @@ static void test_one_spare()
 	roll_many(game, 17, 0);
 	assert(bowling_game_score(game) == 16
 			&& "test_one_spare()");
+	bowling_game_destroy(game);
 }
 
 static void test_one_strike()
@@ -42,6 +45,7 @@ static void test_one_strike()
 	roll_many(game, 16, 0);
 	assert(bowling_game_score(game) == 24
 			&& "test_one_strike()");
+	bowling_game_destroy(game);
 }
 
 static void test_perfect_game()
@@ -50,6 +54,7 @@ static void test_perfect_game()
 	roll_many(game, 12, 10);
 	assert(bowling_game_score(game) == 300
 			&& "test_perfect_game()");
+	bowling_game_destroy(game);
 }
 
 int main(int argc, char *argv[])
