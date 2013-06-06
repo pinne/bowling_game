@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+bowling_game	bowling_game.c	/^struct bowling_game {$/;"	s	file:
+bowling_game_create	bowling_game.c	/^struct bowling_game *bowling_game_create() {$/;"	f
+bowling_game_destroy	bowling_game.c	/^void bowling_game_destroy(struct bowling_game *game)$/;"	f
+bowling_game_roll	bowling_game.c	/^void bowling_game_roll(struct bowling_game *game, int pins)$/;"	f
+bowling_game_score	bowling_game.c	/^int bowling_game_score(struct bowling_game *game)$/;"	f
+current_roll	bowling_game.c	/^	int current_roll;$/;"	m	struct:bowling_game	file:
+is_spare	bowling_game.c	/^static bool is_spare(struct bowling_game *game, int frame_index)$/;"	f	file:
+is_strike	bowling_game.c	/^static bool is_strike(struct bowling_game *game, int frame_index)$/;"	f	file:
+main	bowling_game_test.c	/^int main(int argc, char *argv[])$/;"	f
+max_rolls	bowling_game.c	/^enum { max_rolls = 21 };$/;"	e	enum:__anon1	file:
+normal_score	bowling_game.c	/^static int normal_score(struct bowling_game *game, int frame_index)$/;"	f	file:
+roll_many	bowling_game_test.c	/^static void roll_many(struct bowling_game *game, int n, int pins)$/;"	f	file:
+rolls	bowling_game.c	/^	int rolls[max_rolls];$/;"	m	struct:bowling_game	file:
+spare_score	bowling_game.c	/^static int spare_score(struct bowling_game *game, int frame_index)$/;"	f	file:
+strike_score	bowling_game.c	/^static int strike_score(struct bowling_game *game, int frame_index)$/;"	f	file:
+test_all_ones	bowling_game_test.c	/^static void test_all_ones()$/;"	f	file:
+test_gutter_game	bowling_game_test.c	/^static void test_gutter_game()$/;"	f	file:
+test_one_spare	bowling_game_test.c	/^static void test_one_spare()$/;"	f	file:
+test_one_strike	bowling_game_test.c	/^static void test_one_strike()$/;"	f	file:
+test_perfect_game	bowling_game_test.c	/^static void test_perfect_game()$/;"	f	file:
